@@ -1,0 +1,29 @@
+{
+  "name": "chatbix",
+  "version": "1.0.0",
+  "description": "Chat App using web sockets",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexkimeu0/ChatBix.git"
+  },
+  "author": "Alex Kimeu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexkimeu0/ChatBix/issues"
+  },
+  "homepage": "https://github.com/alexkimeu0/ChatBix#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
