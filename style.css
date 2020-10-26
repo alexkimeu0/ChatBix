@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: 'Roboto', sans-serif;
+body {
+    background: #ecf0f1;
+    font-family: 'Raleway', sans-serif;
+
 }
 
-body {
+.logo {
+    height: 40px;
+    border-radius: 50%;
 }
 
 .container {
@@ -17,6 +21,7 @@ body {
     margin: auto;
 }
 
+/* Join file */
 .join {    
     height: 100vh;   
     color: #ffffff; 
@@ -37,7 +42,17 @@ form {
     
 }
 
-form > h2 {
+form .header {
+    display: flex;
+    flex-direction: column;
+}
+
+form .header > img {
+    height: 50px;
+    border-radius: .5rem;
+}
+
+form .header > h2 {
     margin-bottom: .5rem;
     font-family: cursive;
     font-weight: bold;
@@ -61,4 +76,100 @@ button {
     background: #227093;
     cursor: pointer;
     color: #ffffff;
+    font-weight: bold;
+}
+
+/* Chat file */
+.chat {    
+    height: 100vh;   
+    padding: 1rem;
+    margin: 5rem 0;
+}
+
+.chat button {
+    padding: .4rem;
+    border: none;
+}
+
+.chat-header {
+    background: #2c2c54;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: .5rem;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-header h4 {
+    color: #ffffff;
+    font-family: cursive;
+    margin-left: .5rem;
+}
+
+.chat-main {
+    display: flex;
+}
+
+.chat-sidebar {
+    background: #40407a;
+    width: 150px;
+    max-width: 200px;
+    padding: .5rem;
+    color: #ffffff;
+}
+
+.chat-sidebar > h4, .chat-sidebar > h5 {
+    margin: .3rem 0;
+    cursor: pointer;
+}
+
+.chat-sidebar > .room {
+    background: #2c2c54;
+    padding: .4rem;
+}
+
+.chat-sidebar > .users {
+    padding: .1rem .4rem;
+}
+
+.chat-body {
+    background: #ffffff;
+    flex: 1;
+    padding: .5rem;
+    scroll-behavior: smooth;
+    border: 1px solid lightgray;
+    height: 40vh;
+}
+
+.chat-info {
+    background: #f5f6fa;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.chat-info .name {
+    color: #227093;
+}
+
+.chat-info p > span {
+    font-size: x-small;
+}
+
+.chat-footer {
+    background: #2c2c54;
+    padding: 1rem;
+    display: flex;
+}
+
+.chat-footer > input {
+    flex: 1;
+    padding: .3rem;
+    border-width: 0;
+    outline-width: 0;
 }
